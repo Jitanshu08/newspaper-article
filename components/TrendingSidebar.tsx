@@ -23,7 +23,7 @@ export function TrendingSidebar({ articles }: TrendingSidebarProps) {
           {articles.map((article, index) => (
             <Link
               key={article.id}
-              href={`#article-${article.id}`}
+              href={`/article/${article.slug}`}
               className="group flex gap-4 pb-4 border-b border-border last:pb-0 last:border-b-0 hover:no-underline"
             >
               {/* Trending Number */}
@@ -86,7 +86,7 @@ export function TrendingSidebar({ articles }: TrendingSidebarProps) {
             (category) => (
               <Link
                 key={category}
-                href={`#${category.toLowerCase()}`}
+                href={`/category/${category.toLowerCase()}`}
                 className="px-3 py-1 rounded-full bg-muted text-foreground text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
               >
                 {category}

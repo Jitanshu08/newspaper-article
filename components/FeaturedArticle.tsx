@@ -31,7 +31,7 @@ export function FeaturedArticle({ article }: FeaturedArticleProps) {
 
           {/* Title */}
           <Link
-            href={`#article-${article.id}`}
+            href={`/article/${article.slug}`}
             className="block group/title"
           >
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white line-clamp-3 group-hover/title:text-accent transition-colors">

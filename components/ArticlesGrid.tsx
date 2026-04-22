@@ -35,7 +35,7 @@ export function ArticlesGrid({ articles }: ArticlesGridProps) {
 
             {/* Title */}
             <Link
-              href={`#article-${article.id}`}
+              href={`/article/${article.slug}`}
               className="group/title block"
             >
               <h3 className="font-serif text-lg font-bold text-foreground line-clamp-2 group-hover/title:text-accent transition-colors">
